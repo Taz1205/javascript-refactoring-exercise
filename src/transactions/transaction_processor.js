@@ -20,4 +20,4 @@ const sortTransactions = (transactionCount) => {
   return sortedTransactions.map(([name, count]) => `${name} ${count}`);
 };
 
-module.exports = countTransactions;
+export default countTransactions;
