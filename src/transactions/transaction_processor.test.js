@@ -31,3 +31,6 @@ test('check multiple transactions numerical order correct', () => {
 test('notebook example from the readme', () => {
     expect(processTransactions(['notebook', 'notebook', 'mouse', 'keyboard', 'mouse'])).toEqual(['mouse 2', 'notebook 2', 'keyboard 1']);
 });
+test('notebook example from the readme with more inputs', () => {
+    expect(processTransactions(['notebook', 'notebook', 'notebook', 'laptop', 'laptop', 'keyboard', 'mouse'])).toEqual(['notebook 3', 'laptop 2', 'keyboard 1', 'mouse 1']);
+});
